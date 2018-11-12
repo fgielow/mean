@@ -4,8 +4,8 @@ services:
   app:
     build: ./
     image: mean
-    expose:
-      - 4040
+    ports:
+      - '4040:4040'
     environment:
       NODE_ENV: production
       SERVER_PORT: 4040
@@ -17,3 +17,7 @@ services:
 
   mongo:
     image: mongo:3.6
+    ports:
+      - '27017:27017'
+    volumes: 
+      - ./mongo-db:/data/db
