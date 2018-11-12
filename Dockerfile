@@ -1,11 +1,14 @@
-FROM node:8
+FROM node:10.13.0
 
 WORKDIR /usr/src/app
-ADD . /usr/src/app
 
-# RUN yarn
+COPY ./package.json /usr/src/app
+
+COPY ./package-lock.json /usr/src/app
 
 RUN npm install
+
+ADD . /usr/src/app
 
 RUN yarn build
 
