@@ -10,7 +10,10 @@ RUN npm install
 
 ADD . /usr/src/app
 
-RUN yarn build
+#RUN yarn build
+#RUN ng build --prod
+
+RUN ./node_modules/.bin/ng build
 
 EXPOSE 4040
 
