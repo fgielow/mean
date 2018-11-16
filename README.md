@@ -4,16 +4,16 @@ The mean stack is intended to provide a simple and fun starting point for cloud 
 
 ### Installation 
 ``` 
-git clone https://github.com/linnovate/mean
+git clone https://github.com/fgielow/mean
 cp .env.example .env
-yarn install
+npm install
 yarn build
 yarn start (for development)
 yarn serve (for production)
 ```
 ### Docker based 
 ``` 
-git clone https://github.com/linnovate/mean
+git clone https://github.com/fgielow/mean
 cp .env-example .env
 docker-compose up -d
 ```
