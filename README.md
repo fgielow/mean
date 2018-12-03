@@ -5,19 +5,19 @@ The mean stack is intended to provide a simple and fun starting point for cloud 
 ### Installation 
 ``` 
 git clone https://github.com/fgielow/mean
+cd mean
 cp .env.example .env
 npm install
-yarn build
-yarn start (for development)
-yarn serve (for production)
+npm start (for development)
 ```
 ### Docker based 
 ``` 
 git clone https://github.com/fgielow/mean
-cp .env-example .env
+cd mean
+cp .env.example .env
 docker-compose up -d
 ```
-
-# AngularMaterial
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+### Credits 
+- The MEAN name was coined by Valeri Karpov.
+- Initial concept and development was done by Amos Haviv and sponsered by Linnovate.
+- Inspired by the great work of Madhusudhan Srinivasa.
